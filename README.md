@@ -1,70 +1,268 @@
-# Getting Started with Create React App
+# 🛍️ Shoply — E-Commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive e-commerce web application built with React.js.
 
-## Available Scripts
+Shoply provides a complete online shopping experience with product browsing, search and filtering, authentication, cart management, wishlist, checkout, and order tracking.
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+https://e-commerce-lime-six-32.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 GitHub Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://github.com/ghada484/e-commerce
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🏠 Home Page
 
-### `npm run build`
+* Hero section
+* Product categories
+* Flash deals
+* Best sellers
+* New arrivals
+* Recommended products
+* Popular brands
+* Newsletter subscription
+* Responsive footer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛍️ Products
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Fetch products from DummyJSON API
+* Search products
+* Filter by category
+* Filter by brand
+* Price range filtering
+* Rating filtering
+* Stock availability filter
+* Product sorting
+* Pagination
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📦 Product Details
 
-### `npm run eject`
+* Product images and thumbnails
+* Product information
+* Price and discount
+* Stock availability
+* Quantity control
+* Color and size selection
+* Customer reviews
+* Related products
+* Add to cart
+* Add/remove from wishlist
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🛒 Shopping Cart
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Add products to cart
+* Increase/decrease quantity
+* Stock-limit validation
+* Remove products
+* Move products to wishlist
+* Automatic subtotal and total calculation
+* Cart item counter
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ❤️ Wishlist
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Add/remove products
+* Wishlist counter
+* Move products to cart
+* Persistent wishlist using LocalStorage
 
-## Learn More
+### 🔐 Authentication
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* User registration
+* User login
+* Logout
+* Protected routes
+* Persistent authentication using LocalStorage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💳 Checkout
 
-### Code Splitting
+* Shipping information
+* Form validation
+* Payment method selection
+* Order summary
+* Shipping calculation
+* Order placement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📦 Orders
 
-### Analyzing the Bundle Size
+* Order history
+* Order details
+* Order status
+* Shipping information
+* Payment information
+* Order totals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🔔 Notifications
 
-### Making a Progressive Web App
+* Success notifications
+* Error notifications
+* Informational notifications
+* Toast notifications for cart, wishlist, and orders
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📱 Responsive Design
 
-### Advanced Configuration
+Fully responsive layout for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Desktop
+* Tablet
+* Mobile
 
-### Deployment
+## 🛠️ Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* React.js
+* JavaScript ES6+
+* HTML5
+* CSS3
+* React Router
+* Context API
+* Axios
+* REST API
+* LocalStorage
+* Create React App
+* DummyJSON API
+* Vercel
 
-### `npm run build` fails to minify
+## 🧠 React Concepts Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Functional Components
+* React Hooks
+* `useState`
+* `useEffect`
+* `useContext`
+* Context API
+* React Router
+* Protected Routes
+* API Integration
+* State Management
+* LocalStorage
+* Conditional Rendering
+* Reusable Components
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+│   └── images/
+│
+├── Components/
+│   ├── BestSellers/
+│   ├── Brands/
+│   ├── Categories/
+│   ├── FlashDeals/
+│   ├── Footer/
+│   ├── Hero/
+│   ├── Loading/
+│   ├── Navbar/
+│   ├── NewArrivals/
+│   ├── Newsletter/
+│   ├── ProductCard/
+│   ├── ProtectedRoute/
+│   ├── Recommended/
+│   └── Toast/
+│
+├── Pages/
+│   ├── Cart/
+│   ├── Checkout/
+│   ├── Home/
+│   ├── Login/
+│   ├── NotFound/
+│   ├── OrderDetails/
+│   ├── Orders/
+│   ├── ProductDetails/
+│   ├── Products/
+│   ├── Profile/
+│   ├── Register/
+│   └── Wishlist/
+│
+├── context/
+│   ├── AuthContext.js
+│   ├── CartContext.js
+│   ├── OrdersContext.js
+│   ├── ProductsContext.js
+│   ├── ToastContext.js
+│   └── WishlistContext.js
+│
+├── data/
+│   └── products.js
+│
+├── App.js
+└── index.js
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ghada484/e-commerce.git
+```
+
+Navigate to the project:
+
+```bash
+cd e-commerce
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The application will run on:
+
+```text
+http://localhost:3000
+```
+
+## 🔌 API
+
+Product data is provided by:
+
+https://dummyjson.com/
+
+Axios is used to communicate with the API.
+
+## 💾 Data Persistence
+
+The application uses LocalStorage to persist:
+
+* User authentication
+* Registered users
+* Shopping cart
+* Wishlist
+* Orders
+
+## 📌 Future Improvements
+
+* Real payment gateway integration
+* Backend API integration
+* Product reviews submission
+* Real user accounts
+* Admin dashboard
+* Product management
+* Order management
+* Advanced product variants
+* Dark mode
+
+## 👩‍💻 Developer
+
+**Ghada Abdalla**
+
+Frontend Developer | React.js
+
+GitHub:
+https://github.com/ghada484
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository.

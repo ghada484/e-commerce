@@ -1,0 +1,183 @@
+.newsletter-section {
+  padding: 65px 0;
+  background-color: #12355b;
+}
+
+.newsletter-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.newsletter-content span {
+  color: #8de0df;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.newsletter-content h2 {
+  margin: 10px 0 18px;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.newsletter-content p {
+  max-width: 520px;
+
+  color: #c8d5df;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.newsletter-form-wrapper {
+  width: 100%;
+}
+
+.newsletter-form {
+  display: flex;
+
+  width: 100%;
+  height: 50px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+
+  background-color: #ffffff;
+}
+
+.newsletter-form input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 0 17px;
+
+  border: none;
+  outline: none;
+
+  color: #333;
+
+  font-size: 13px;
+}
+
+.newsletter-form input::placeholder {
+  color: #999;
+}
+
+.newsletter-form button {
+  width: 125px;
+
+  border: none;
+
+  background-color: #159a9c;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #117f81;
+}
+
+.newsletter-form-wrapper small {
+  display: block;
+
+  margin-top: 12px;
+
+  color: #9fb3c2;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.newsletter-message {
+  margin-top: 10px;
+
+  color: #8de0df;
+
+  font-size: 12px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .newsletter-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 28px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .newsletter-section {
+    padding: 50px 0;
+  }
+
+  .newsletter-content h2 {
+    font-size: 24px;
+  }
+
+  .newsletter-content p {
+    font-size: 12px;
+  }
+
+  .newsletter-form {
+    height: auto;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    overflow: visible;
+
+    background-color: transparent;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    height: 45px;
+
+    border-radius: 5px;
+  }
+}

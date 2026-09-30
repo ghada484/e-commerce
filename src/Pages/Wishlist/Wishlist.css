@@ -1,0 +1,306 @@
+.wishlist-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 20px 70px;
+}
+
+
+/* HEADER */
+
+.wishlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.wishlist-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  color: #222;
+}
+
+.wishlist-header p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.clear-wishlist {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #555;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.clear-wishlist:hover {
+  border-color: #159a9c;
+  color: #159a9c;
+}
+
+
+/* GRID */
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* CARD */
+
+.wishlist-card {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* REMOVE */
+
+.remove-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #777;
+
+  font-size: 20px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.remove-wishlist:hover {
+  color: #d9534f;
+}
+
+
+/* IMAGE */
+
+.wishlist-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 210px;
+
+  background: #f7f7f7;
+}
+
+.wishlist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* INFO */
+
+.wishlist-info {
+  padding: 16px;
+}
+
+.wishlist-category {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #999;
+  font-size: 10px;
+
+  text-transform: uppercase;
+}
+
+.wishlist-title {
+  display: block;
+
+  min-height: 40px;
+
+  color: #222;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+}
+
+.wishlist-title:hover {
+  color: #159a9c;
+}
+
+
+/* RATING */
+
+.wishlist-rating {
+  margin-top: 10px;
+
+  color: #666;
+
+  font-size: 11px;
+}
+
+.wishlist-rating span {
+  color: #f5a623;
+  margin-right: 4px;
+}
+
+
+/* BOTTOM */
+
+.wishlist-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+.wishlist-bottom strong {
+  color: #159a9c;
+  font-size: 17px;
+}
+
+
+/* ADD TO CART */
+
+.wishlist-cart-button {
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: #159a9c;
+  color: #fff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.wishlist-cart-button:hover {
+  background: #117e80;
+}
+
+.wishlist-cart-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* EMPTY */
+
+.empty-wishlist {
+  min-height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.empty-wishlist-icon {
+  font-size: 70px;
+  color: #159a9c;
+  margin-bottom: 15px;
+}
+
+.empty-wishlist h1 {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 28px;
+}
+
+.empty-wishlist p {
+  margin: 0 0 25px;
+  color: #777;
+  font-size: 14px;
+}
+
+.continue-shopping {
+  display: inline-block;
+
+  padding: 12px 22px;
+
+  border-radius: 5px;
+
+  background: #159a9c;
+  color: #fff;
+
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.continue-shopping:hover {
+  background: #117e80;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wishlist-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wishlist-page {
+    padding: 30px 15px 50px;
+  }
+
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wishlist-header {
+    flex-direction: column;
+  }
+
+  .wishlist-header h1 {
+    font-size: 24px;
+  }
+}
